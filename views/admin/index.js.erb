@@ -1,0 +1,105 @@
+<%= File.read(settings.root + '/admin/jquery.js') %>
+<%= File.read(settings.root + '/admin/jquery-ui.js') %>
+
+jQuery.noConflict();
+
+(function($) { 
+  $(function() {
+    // Short-circuit if this has run already (bookmarklet clicked twice).
+    if (window._copy_initialized) {
+      // Make the blocks clickable unless the Copy dialog is present.
+      if ($('#_copy').length == 0) {
+        clickable();
+      }
+      return true;
+    }
+    
+    function clickable() {
+      $('._copy_editable').addClass('_copy_clickable');
+      $('._copy_clickable:empty').text('(add copy)');
+    }
+    
+    function unclickable() {
+      $('._copy_editable').removeClass('_copy_clickable');
+    }
+    
+    // Apply sizing rules (css classes) to the textarea based
+    // on the length of the content and presence of newlines.
+    function resizeTextarea() {
+      var textarea = $('#_copy textarea');
+      var content = textarea.val();
+      
+      textarea.removeClass('_copy_small _copy_medium _copy_large');
+      
+      if (/\n/.test(content) || content.length > 55) {
+        if (content.length > 300) {
+          textarea.addClass('_copy_large');
+        } else {
+          textarea.addClass('_copy_medium');
+        }
+      } else {
+        textarea.addClass('_copy_small');
+      }
+      
+      textarea.show();
+    }
+    $('#_copy textarea').live('keydown keyup keypress change paste focus', resizeTextarea);
+    
+    // Apply the styles.
+    $('head').append('<style><%= File.read(settings.root + '/admin/copy.css').gsub(/\n/, " \\\n") %></style>');
+    
+    // When a clickable region is clicked, load the content into the editor.
+    $('._copy_clickable').live('click', function() {
+      var copy = $(this);
+      unclickable();
+      $.ajax({
+        url: '/_copy/'+copy.attr('data-name'),
+        success: function(html) {
+          // Attach the editor and resize the text area.
+          $('body').prepend(html);
+          resizeTextarea();
+          // Center the editor on the screen.
+          // Make it draggable so you can move it around.
+          // Focus on the texarea for convenience.
+          $('#_copy').css({ margin:'-'+($('#_copy').height() / 2)+'px 0 0 -'+($('#_copy').width() / 2)+'px' })
+                     .draggable()
+                     .find('textarea').focus();
+        }
+      });
+    });
+    
+    // Prevent navigating away if a link is clicked in an editable region
+    // and generally prevent interfering with launching the copy editer.
+    $('._copy_clickable *').live('click', function(event) {
+      event.preventDefault();
+    });
+    
+    // Hide the editor and make everything clickable if cancel is pressed.
+    $('._copy_cancel').live('click', function(event) {
+      event.preventDefault();
+      $('#_copy').remove();
+      clickable();
+    });
+    
+    // Save the content when the submit button is pressed.
+    $('._copy_edit_form').live('submit', function() {
+      var form = $(this);
+      var original = $('[data-name="'+form.attr('data-content-name')+'"]');
+      form.find(':submit').attr('disabled', 'disabled');
+      $.ajax({
+        type: 'PUT',
+        url: form.attr('action'),
+        data: { content: form.find('textarea').val(), wrap_tag: original.get(0).tagName.toLowerCase() },
+        success: function(html) {
+          $('#_copy').remove();
+          original.replaceWith(html);
+        }
+      })
+      return false;
+    })
+    
+    // Make the editable regions clickable.
+    clickable();
+    window._copy_initialized = true;
+  });
+})(jQuery);
