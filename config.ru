@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'bundler/setup'
-require './app'
 Bundler.require(:default)
 
 Copy::Server.config do

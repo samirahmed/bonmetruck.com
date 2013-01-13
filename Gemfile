@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'copy', :path => "lib/copy"
+gem 'copy', :path => "lib/copy-cms"
 gem 'datamapper'
 
 group :development do

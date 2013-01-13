@@ -1,5 +1,5 @@
 PATH
-  remote: lib/copy
+  remote: lib/copy-cms
   specs:
     copy (0.1.7)
       redcarpet
