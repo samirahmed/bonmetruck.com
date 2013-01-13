@@ -1,0 +1,12 @@
+<div id="_copy">
+  <form class="_copy_edit_form" data-content-name="<%= @name %>" action="/_copy/<%= @name %>">
+    <p>
+      Format text with <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">markdown</a>.
+    </p>
+    <textarea name="content"><%=h @doc %></textarea>
+    <p>
+      <input class="_copy_submit" type="submit" value="Save" />
+      or <a class="_copy_cancel" href="#">cancel</a>
+    </p>
+  </form>
+</div>
