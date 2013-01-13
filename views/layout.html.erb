@@ -3,11 +3,15 @@
 <head> 
   <meta charset="utf-8"> 
   <title>Bon Me</title> 
-  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="/stylesheets/main.css">
-  <%= erb :ga_script%> 
+  <%= erb :ga_script %> 
   <body>
-  <%= yield %>
+  	<div class="container">
+  		<%= erb :'header.html' %>
+  		<%= yield %>
+  	</div>
   <script src="/javascripts/main.js"></script>
 </body> 
 <script src="/javascripts/bootstrap.js"></script>
