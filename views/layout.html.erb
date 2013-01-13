@@ -2,13 +2,13 @@
 <html> 
 <head> 
   <meta charset="utf-8"> 
-  <title>I love Copy</title> 
+  <title>Bon Me</title> 
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
   <link rel="stylesheet" href="/stylesheets/main.css">
-</head> 
-<body>
-  
+  <%= erb :ga_script%> 
+  <body>
   <%= yield %>
-  
   <script src="/javascripts/main.js"></script>
 </body> 
+<script src="/javascripts/bootstrap.js"></script>
 </html>

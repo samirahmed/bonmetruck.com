@@ -7,6 +7,9 @@ Copy::Server.config do
   # Heroku friendly: http://devcenter.heroku.com/articles/http-caching
   #
   set :cache_time, 10 
+  
+  # Sets the Go
+
   # If you're storing copy in a data store, you need a user and password
   # set to protect it. Uncomment these and enter the credentials you want
   # to use or set them as environment variables.
@@ -15,10 +18,12 @@ Copy::Server.config do
 	if ENV['COPY_USERNAME'] and ENV['COPY_PASSWORD']
   		set :copy_username, ENV['COPY_USERNAME']
   	 	set :copy_password, ENV['COPY_PASSWORD']
+		set :ga_code, ENV['GA_CODE']
   		set :cache_time, 300
   	else
 		set :copy_username, 'admin'
 		set :copy_password, 'admin'
+		set :ga_code, 'UA-37165601-1'
 	end
 
   # Enter the URL to your data store.
