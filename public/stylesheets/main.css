@@ -100,7 +100,7 @@ div.menubar{
 	font-weight:bold;
 }
 
-.contactform button{
+.contactform .btn{
 	text-align: center;
 	display: block;
 	float: center;
