@@ -9,6 +9,7 @@ end
 
 group :production do
 	gem 'dm-postgres-adapter'
+	gem 'thin'
 end
 # Using mongodb for storage? Uncomment these:
 #
