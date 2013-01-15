@@ -165,6 +165,26 @@ div.menubar{
 	font-size:40px;
 }
 
+/*Location*/
+.location-days{
+	background-color:#5dc350;
+	border: 3px solid white;
+}
+.location-days ul{ 
+	margin: 5px auto;
+	width:100%;
+}
+
+.location-days a{
+	color: white;
+	font-size: 10pt;
+	font-family: 'Rockwell', "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+}
+
+.location-days li > a:hover{ background-color: darkgreen;}
+.location-days .active > a:hover{ background-color: #018D12;}
+.location-days .active > a{ background-color: #018D12;}
+
 /*Twitter*/
 .twitter {
 }
@@ -184,7 +204,17 @@ div.menubar{
 	position: relative;
 	top: 5px;
 	z-index:-1;
+}
+
+/*Utility*/
+.rounded-corners{
 	border-radius: 5px;
   	-moz-border-radius: 5px; /* Firefox */
     -webkit-border-radius: 5px; /* Safari, Chrome */
+}
+
+.tablestyle{
+	display:table;
+	margin-left: auto;
+	margin-right:auto;
 }
