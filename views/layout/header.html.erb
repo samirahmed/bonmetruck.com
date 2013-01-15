@@ -1,0 +1,37 @@
+<header class="jumbotron subhead" id="overview">
+	<div class="container">
+		<div class="row" >
+			<div class="span12 logo">
+			</div>
+		</div>
+	</div>
+	<div class="menubar">
+		<div class="tablestyle subnav">
+			<ul class="nav nav-pills">
+				<li class="">
+					<a class="menulink" href="/">about us</a>
+				</li>
+				<li class>
+					<a class="menulink" href="/">locations</a>
+				</li>
+				<li class>
+					<a class="menulink" href="/">menu</a>
+				</li>
+				<li class>
+					<a class="menulink" href="/">catering</a>
+				</li>
+				<li class>
+					<a class="menulink" href="/">jobs</a>
+				</li>
+				<li class>
+					<a class="menulink" href="/">contact</a>
+				</li>
+				<% if authorized? %>
+				<li class>
+					<a class="menulink" href="/admin">edit</a>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</header>
