@@ -164,3 +164,27 @@ div.menubar{
 	text-align:center;
 	font-size:40px;
 }
+
+/*Twitter*/
+.twitter {
+}
+
+.twitter-icon {
+	background-image: url('/assets/icons/twitter.png');
+	height:30px;
+	background-repeat: no-repeat;
+}
+
+.twitter h3{
+	text-align:center;
+	color:white;
+	background-color: #3688A5;
+	font-weight:300;
+	margin:0;
+	position: relative;
+	top: 5px;
+	z-index:-1;
+	border-radius: 5px;
+  	-moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+}
