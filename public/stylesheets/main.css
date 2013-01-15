@@ -1,0 +1,99 @@
+/* Bon Me Style
+ * Samir Ahmed 2013 */
+
+/* Base CSS */
+body{
+	background-color: #53D7E9;
+}
+
+h4{
+	font-family:'Quicksand', sans-serif;
+}
+
+/* Header */
+.logo {
+	background-image: url('/images/large_logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 150px;	
+}
+
+/* Footer */
+footer{
+	background-color: #4B4B49;
+	color: #aaa;
+	position: fixed;
+	bottom: 0px;
+	width:100%;
+}
+
+.foot {
+	padding-top:10px;
+}
+.foot * {
+	color: white;
+	font-size: 8pt;
+	text-align:center;
+	font-family: 'Rockwell', "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+}
+
+/*Menu Bar*/
+div.menubar{
+	background-color: #FBF652;
+	box-shadow: 0px 5px 5px #666;
+	margin-bottom: 20px;
+}
+
+.menubar > div{
+	display:table; 
+	margin: 0 auto;
+	min-width: 771px;
+}
+
+.menubar > div  > ul { 
+	margin: 0 20px;
+}
+
+.menubar > div > ul > li { 
+	margin: 0 10px;
+}
+
+.menulink{
+	color: black;
+	font-family: 'Rockwell', "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+	font-size: 14pt;
+	font-style: bold;
+}
+
+.nav > li > .menulink:hover {
+	background-color: #F8E23C;
+	color: black;
+}
+
+/* Gallery */
+.gallery{
+	padding: 0 20px;
+	margin-top : 30px;
+}
+
+.gallery img {
+	height: 300px;
+	width:300px;
+	margin:0;
+}
+
+.gallery div{
+	margin:0;
+}
+
+.gallery-caption{
+	background-color: #FBFBF5;
+	padding: 6px 0;
+	margin: 0 40px 0 0px;
+
+}
+
+.gallery-caption * {
+	margin:0;
+	text-align:center;
+}
