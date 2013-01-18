@@ -25,12 +25,13 @@ Copy::Server.config do
 		set :copy_password, 'admin'
 		set :ga_code, 'UA-37165601-1'
 	end
+  
+  set :storage, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/blog.db" 
 
   # Enter the URL to your data store.
   # Be sure to uncomment the correlating gems in your Gemfile.
   # "redis://", "mongodb://", "mysql://", "postgres://", and "sqlite://" are supported.
   # Heroku friendly: http://devcenter.heroku.com/articles/mongohq
-  #
   # set :storage, ENV['MONGOHQ_URL']
 end
 

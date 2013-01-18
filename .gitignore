@@ -1,6 +1,6 @@
 # Standard
 *.swp
-
+*.db
 # Compiled source #
 ###################
 *.com

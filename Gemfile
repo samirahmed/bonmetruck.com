@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'copy', :path => "lib/copy-cms"
-gem 'datamapper'
+gem 'data_mapper'
 
 group :development do
 	gem 'dm-sqlite-adapter'
