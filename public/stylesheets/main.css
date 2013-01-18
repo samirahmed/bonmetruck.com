@@ -6,6 +6,10 @@ body{
 	font-family:'Quicksand', sans-serif;
 }
 
+h1,h2,h3{
+	font-family:'Quicksand',sans-serif;
+}
+
 h4{
 	font-family:'Quicksand', sans-serif;
 }
@@ -15,7 +19,7 @@ h4{
 	background-image: url('/images/large_logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 150px;	
+	height: 110px;	
 }
 
 /* Footer */
@@ -232,6 +236,34 @@ div.menubar{
 .location * {
 	text-align:center;
 	vertical-align:middle;
+}
+
+.location h4 {
+	font-size:20pt;
+	font-weight:bold;
+	margin: 20px 0;
+}
+
+.location h1 {
+	font-weight: 400;
+	font-size:14pt;
+}
+
+.location h2 {
+	font-size: 10pt;
+}
+
+.location h3 {
+	font-size:8pt;
+}
+
+.location h3 a {
+	color: white;
+}
+
+.location h1, .location h2, .location h3 {
+	margin:4px;
+	line-height:100%;
 }
 
 /*Twitter*/
