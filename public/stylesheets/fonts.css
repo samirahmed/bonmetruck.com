@@ -3,7 +3,27 @@
 	font-family: 'Rockwell';
 	src: url('/assets/fonts/rockwell.eot');
 	src: url('/assets/fonts/rockwell.woff') format('woff'),
-		 url('/assets/fonts/rockwell.ttf') format('truetype');
+		 url('/assets/fonts/rockwell.ttf') format('truetype'),
+		 url('/assets/fonts/rockwell.svg') format('svg');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'Rockwell';
+	src: url('/assets/fonts/Rockwell-Bold.eot');
+	src: url('/assets/fonts/Rockwell-Bold.woff') format('woff'),
+		 url('/assets/fonts/Rockwell-Bold.ttf') format('truetype'),
+		 url('/assets/fonts/Rockwell-Bold.svg') format('svg');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'Rockwell';
+	src: url('/assets/fonts/Rockwell-ExtraBold.eot');
+	src: url('/assets/fonts/Rockwell-ExtraBold.woff') format('woff'),
+		 url('/assets/fonts/Rockwell-ExtraBold.ttf') format('truetype'),
+		 url('/assets/fonts/Rockwell-ExtraBold.svg') format('svg');
+	font-weight: bolder;
 }
 
 @font-face {

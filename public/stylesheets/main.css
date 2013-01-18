@@ -1,6 +1,5 @@
 /* Bon Me Style
- * Samir Ahmed 2013 */
-
+ * samirahmed 2013 */
 /* Base CSS */
 body{
 	background-color: #53D7E9;
@@ -60,15 +59,15 @@ div.menubar{
 }
 
 .menulink{
-	color: black;
+	color: #6F6102;
 	font-family: 'Rockwell', "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
 	font-size: 14pt;
 	font-style: bold;
 }
 
 .nav > li > .menulink:hover {
-	background-color: #F8E23C;
-	color: black;
+	background-color:#FFD600;
+	color: black;/*#966600;*/
 }
 
 /* Contact */
@@ -177,7 +176,7 @@ div.menubar{
 	color: black;
 	text-align:center;
 	font-size: 16px;
-	font-weight:regular;
+	font-weight:normal;
 	font-family: 'Rockwell', "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
 }
 
@@ -209,7 +208,7 @@ div.menubar{
 }
 
 .grey {
-	background-color: #909284;
+	background-color: #D3D3D3;
 }
 
 .blue {
