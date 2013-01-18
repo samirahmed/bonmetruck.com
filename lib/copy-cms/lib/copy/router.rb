@@ -30,9 +30,7 @@ module Copy
     end
     
     def layout
-      @layout ||= if format == :html && local_layout?
-        local_layout.to_sym
-      elsif global_layout?
+      @layout ||= if format == :html && File.exists?(File.join(@views, "layout.html.#{renderer}"))
         :'layout.html'
       else
         false
@@ -42,21 +40,8 @@ module Copy
     def success?
       template_file && renderer && template
     end
-
+    
     private
-      
-      def local_layout?
-        File.exists?(File.join(@views, "#{local_layout}#{renderer}"))
-      end
-
-      def local_layout
-        path_without_format.split('/')[0...-1].push("layout.html").join('/')
-      end
-
-      def global_layout?
-        File.exists?(File.join(@views, "layout.html.#{renderer}"))
-      end
-      
       def determine_path(path)
         if path == '/'
           '/index'
