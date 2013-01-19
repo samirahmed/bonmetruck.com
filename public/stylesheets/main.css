@@ -1,6 +1,9 @@
 /* Bon Me Style
  * samirahmed 2013 */
 /* Base CSS */
+
+
+
 body{
 	background-color: #53D7E9;
 	font-family:'Quicksand', sans-serif;
@@ -19,20 +22,37 @@ h4{
 	background-image: url('/images/large_logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 110px;	
+	height: 150px;	
+}
+
+
+/*Sticky Footer Stuff */
+html, 
+body {
+	height: 100%;
+}
+#wrap{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px;
+}
+
+#push,
+#footer{
+    height: 100px;
 }
 
 /* Footer */
+
 footer{
 	background-color: #4B4B49;
 	color: #aaa;
-	position: fixed;
-	bottom: 0px;
 	width:100%;
 }
 
 .foot {
-	padding-top:10px;
+	padding-top:30px;
 }
 .foot * {
 	color: white;

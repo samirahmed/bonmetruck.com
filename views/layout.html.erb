@@ -11,8 +11,11 @@
   <%= erb :'components/ga_script.html' %> 
   <body>
 	<%= erb :'layout/header.html' %>
-  	<div class="container">
-  		<%= yield %>
+  	<div id="wrap">
+		<div class="container">
+			<%= yield %>
+		</div>
+		<div id="push"></div>
   	</div>
 	<%= erb :'layout/footer.html' %>
 </body> 
