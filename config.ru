@@ -26,7 +26,7 @@ Copy::Server.config do
 		set :ga_code, 'UA-37165601-1'
 	end
   
-  set :storage, ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/blog.db" 
+  set :storage, ENV['HEROKU_POSTGRES_MAROON_URL'] || "sqlite://#{Dir.pwd}/blog.db" 
 
   # Enter the URL to your data store.
   # Be sure to uncomment the correlating gems in your Gemfile.
