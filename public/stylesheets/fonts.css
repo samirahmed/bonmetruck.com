@@ -1,10 +1,10 @@
 /* Fonts */
 @font-face{
 	font-family: 'Rockwell';
-	src: url('/assets/fonts/rockwell.eot');
-	src: url('/assets/fonts/rockwell.woff') format('woff'),
-		 url('/assets/fonts/rockwell.ttf') format('truetype'),
-		 url('/assets/fonts/rockwell.svg') format('svg');
+	src: url('/assets/fonts/Rockwell.eot');
+	src: url('/assets/fonts/Rockwell.woff') format('woff'),
+		 url('/assets/fonts/Rockwell.ttf') format('truetype'),
+		 url('/assets/fonts/Rockwell.svg') format('svg');
 	font-weight: normal;
 }
 
