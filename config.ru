@@ -23,7 +23,7 @@ Copy::Server.config do
   	else
 		set :copy_username, 'admin'
 		set :copy_password, 'admin'
-		set :ga_code, 'UA-37165601-1'
+		set :ga_code, '123'
 	end
   
   set :storage, ENV['HEROKU_POSTGRESQL_MAROON_URL'] || "sqlite://#{Dir.pwd}/blog.db" 
