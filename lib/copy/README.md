@@ -1,8 +1,3 @@
-# COPY-CMS
-
-Forked from JAVAN MAKHMALI's original copy CMS.
-
-
 # Copy is a simple, Sinatra-based CMS (Copy Management System).
 
 `$ gem install copy` and then generate a new site `$ copy -n mynewsite`
@@ -21,7 +16,7 @@ Forked from JAVAN MAKHMALI's original copy CMS.
     └── views                <- Your views, layouts, and partials live here.
         ├── index.html.erb
         └── layout.html.erb  <- Optional global layout file.
-        
+
 Copy automatically maps URLs to files in your `views` directory.
 
 * `/` &rarr; `index.html.erb`
@@ -67,3 +62,5 @@ Examples:
 Browse to `/_copy` and drag the "Edit Copy" link to your bookmarks bar. Return to your site, click the bookmark (you'll be prompted for your username and password) and then click on the highlighted text to edit it. That's it!
 
 ----
+
+[![Build Status](http://travis-ci.org/javan/copy.png)](http://travis-ci.org/javan/copy) &mdash; &copy; 2013 Javan Makhmali
