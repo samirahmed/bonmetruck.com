@@ -30,9 +30,9 @@ body {
 }
 
 #wrap{
-	min-height: 80%;
+	min-height: 100%;
 	height: auto !important;
-	height: 80%;
+	height: 100%;
 	margin: 0 auto -100px;
 }
 
@@ -316,4 +316,23 @@ div.menubar{
 	display:table;
 	margin-left: auto;
 	margin-right:auto;
+}
+
+
+.full-page{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+#sunburst{
+	z-index:-3;
+}
+
+#opaque{
+ 	z-index:-2;
+  	opacity:0.8;
+	background:#53D7E9;
 }
