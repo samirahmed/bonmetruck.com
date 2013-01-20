@@ -292,6 +292,7 @@ div.menubar{
 
 /*Twitter*/
 .twitter {
+	margin-bottom:20px;
 }
 
 .twitter-icon {
@@ -302,10 +303,11 @@ div.menubar{
 
 .twitter h3{
 	text-align:center;
+	border: 5px solid white;
 	color:white;
 	background-color: #3688A5;
 	font-weight:300;
-	margin:0;
+	margin:0 ;
 	position: relative;
 	top: 5px;
 	z-index:-1;
@@ -352,3 +354,6 @@ div.menubar{
   	opacity:0.8;
 	background:#53D7E9;
 }
+
+/*Xcontent*/
+

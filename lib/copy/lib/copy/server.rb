@@ -97,26 +97,34 @@ module Copy
 
     get '/_copy/?' do
       protected!
-      ERB.new(File.read(settings.root + '/admin/index.html.erb')).result(self.send(:binding))
+      ERB.new(File.read(settings.views + '/admin/index.html.erb')).result(self.send(:binding))
     end
 
     get '/_copy.js' do
       protected!
       content_type(:js)
-      ERB.new(File.read(settings.root + '/admin/index.js.erb')).result(self.send(:binding))
+      ERB.new(File.read(settings.views + '/admin/index.js.erb')).result(self.send(:binding))
     end
 
     get '/_copy/:name' do
       protected!
       @name = params[:name]
       @doc = Copy::Storage.get(params[:name])
-      ERB.new(File.read(settings.root + '/admin/edit.html.erb')).result(self.send(:binding))
+      ERB.new(File.read(settings.views + '/admin/edit.html.erb')).result(self.send(:binding))
     end
 
     put '/_copy/:name' do
       protected!
       Copy::Storage.set(params[:name], params[:content])
       format_text(params[:name], Copy::Storage.get(params[:name]), :wrap_tag => params[:wrap_tag])
+    end
+
+    before '/admin/?*?' do
+        protected!
+    end
+
+    not_found do
+      redirect '/404'
     end
 
     get '*' do
