@@ -1,6 +1,11 @@
 /* Bon Me Style
  * samirahmed 2013 */
 /* Base CSS */
+
+.buffered {
+	margin-bottom:40px;
+}
+
 body{
 	background-color: #53D7E9;
 	font-family:'Quicksand', sans-serif;
