@@ -10,6 +10,12 @@ $( function(){
 				$("#location-info").load('/day/'+$(this).attr('data')+' #info');
 			})
 		}
+		if ($('.menu .sidebar a').length > 0)
+		{
+			$('.menu .sidebar a').on('click',function(){
+				$('#menu-info').load('/menu/'+$(this).attr('data')+' #info');
+			});
+		}
 		  $('#sunburst').pow({
 				rays: 50,
 				originX:'50%',

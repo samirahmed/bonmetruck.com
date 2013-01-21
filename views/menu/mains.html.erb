@@ -1,0 +1,29 @@
+<div id="info">
+	<div id="myCarousel" class="carousel display slide" data-interval="10000">
+		 <div class="carousel-inner contain white">
+			<div class="active item">
+				<div class="title"><h1>the bonme sandwich</h1></div>
+				<img id="sandwich" src="/images/menu-sandwich.jpg" alt="sandwich">
+				<p class="leftish">
+					<% copy :menu_sandwich do %> your choice of filling on a toasted baguette. stuffed with pickled carrots & daikon, housemade pork pate, housemade spicy mayo, cucumbers, red onion & cilantro <%end%>
+				</p>
+			</div>
+			<div class="item">
+				<div class="title"><h1>rice bowls</h1></div>
+				<img id="rice" src="/images/menu-rice.jpg" alt="ricebowl">
+				<p class="rightish">
+					<% copy :menu_rice do %> your choice of brown rice and your choice of filling with seasonal greens, bean sprouts, shredded carrots & daikon, and cilantro.<%end%>
+				</p>
+			</div>
+			<div class="item">
+				<div class="title"><h1>noodle salads</h1></div>
+				<img id="noodle" src="/images/menu-noodle.jpg" alt="noodlebowl">
+				<p class="leftish fatter">
+					<% copy :menu_noodle do %> your choice of soba or rice noodles and your choice of filling with red onion, bean sprouts, seasonal greens, shredded carrot and cilantro. carrot and cilantro. <br/> topped with a dressing of your choice spicy peanut, toasted sesame, vietnamese vinaigrette or miso lime.<%end%>
+				</p>
+			</div>	
+		</div>	
+		<a class="carousel-control left bottom" href="#myCarousel" data-slide="prev">&lsaquo;&lsaquo;</a>
+		<a class="carousel-control right bottom" href="#myCarousel" data-slide="next">&rsaquo;&rsaquo;</a>
+	</div>
+</div>

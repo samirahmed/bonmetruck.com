@@ -474,3 +474,119 @@ padding: 10px 40px;
 .about .fullcaption{
 	background-color: rgba(90,90,90,0.9);
 }
+
+/* Menu */
+.menu .display {
+}
+
+.menu .contain {
+	overflow:hidden;
+	max-height: 355px;
+}
+
+
+.menu .span4, .menu .span8{
+	margin-left:0px;
+}
+
+.menu .display img{}
+
+.menu .display {
+	min-height:355px;
+	margin-bottom:0;
+	height:350px;
+}
+
+.menu .carousel p{
+	color:white;
+	background-color: rgba(0,0,0,0.7);
+	position:absolute;
+	max-width:200px;
+	font-size:15px;
+	line-height:20px;
+	padding:10px;
+	font-weight:lighter;
+	top:100px;
+}
+
+.menu .carousel p.fatter {
+	max-width:300px;
+}
+
+.menu #sandwich{
+	float:right;
+}
+
+.menu #rice{
+	float:left;
+	margin-left:50px;
+}
+
+.menu #noodle{
+	float:right;
+	margin-right:0px;
+}
+
+.bottom{
+	top:90%;
+}
+
+.menu .carousel-control {
+	color:black;
+	border:none;
+	background-color: transparent;
+}
+
+.leftish{
+	left:50px;
+}
+
+.rightish{
+	right:50px;
+}
+
+.middlish{
+	position:absolute;
+	top:50%;
+}
+
+.menu .nav-list > .active > a{
+  	background-color:#FF7000;
+}
+
+.menu .nav-list > .active > a:hover{
+  	background-color:#FF7000;
+}
+
+.menu .menu-nav{
+	background-color: #FFC200;
+}
+
+.menu .sidebar a:hover{
+	background-color:#FF8F00;
+ 	opacity:1;	
+}
+
+.menu .sidebar a{
+	color:white;
+	text-align:right;
+	text-transform:uppercase;
+	font-weight:lighter;
+	padding: 15px 10px;
+	line-height:25px;
+	font-size:20pt;
+}
+
+.no-bullet ul{
+	list-style-type: none;
+	margin:20px 20px;
+}
+
+.no-bullet li{
+ 	font-size:20px;
+	line-height:35px;
+	text-transform:uppercase;
+	margin:10px 0:
+}
+
+.side{}
