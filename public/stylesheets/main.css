@@ -398,11 +398,12 @@ h6.fullcaption {
 	text-align:center;
 }
 
-.title h1, .title h2, .title h3{
+.title h1, .title h2, .title h3, .title h4, .title h6{
 	background-color:#444;
 	color:white;
 	margin:0;
 	padding:10px;
+	line-height:40px;
 	font-weight:300;
 	text-transform: lowercase;
 }
