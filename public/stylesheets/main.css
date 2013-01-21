@@ -189,6 +189,14 @@ div.menubar{
 	max-width: 290px;
 }
 
+.gallery .icon{
+	height:30px;
+	width:auto;
+	margin-top:-6px;
+	margin-left:10px;
+	vertical-align:middle;
+}
+
 .gallery img {
 	height: 300px;
 	width:100%;
