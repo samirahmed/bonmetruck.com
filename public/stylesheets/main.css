@@ -3,6 +3,7 @@
 /* Base CSS */
 
 .buffered {
+	margin-top:40px;
 	margin-bottom:40px;
 }
 
@@ -180,7 +181,12 @@ div.menubar{
 /* Gallery */
 .gallery{
 	padding: 0 20px;
-	margin-top : 30px;
+	margin-top : 0px;
+}
+
+.gallery-spaced .span4{
+	margin-left:10px;
+	max-width: 290px;
 }
 
 .gallery img {
@@ -198,7 +204,7 @@ h6.fullcaption {
 	font-size: 26px;
 }
 
-.fullcaption , .gallery h5{
+.fullcaption , .captioned h5{
 	position:relative;
 	top: -30px;
 	margin: 0;
@@ -210,16 +216,19 @@ h6.fullcaption {
 	font-size: 20px;
 }
 
+.shift-left{
+	margin: 0 40px 0 0px;
+}
+
 .gallery-caption{
 	background-color: #FBFBF5;
 	padding: 6px 0;
-	margin: 0 40px 0 0px;
-
 }
 
 .gallery-caption * {
-	margin:0;
+	margin:10px 15px;
 	text-align:center;
+	font-weight:400;
 }
 
 .fullcaption {
@@ -427,3 +436,6 @@ h6.fullcaption {
 }
 /*Xcontent*/
 
+a.btn-warning.btn-large{
+padding: 10px 40px;
+}
