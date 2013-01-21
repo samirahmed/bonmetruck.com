@@ -439,3 +439,26 @@ h6.fullcaption {
 a.btn-warning.btn-large{
 padding: 10px 40px;
 }
+
+/* About */
+.about div{
+	margin-left:-10px;
+}
+
+.about p {
+	font-size:13pt;
+}
+
+.about .white{
+	z-index:10000;
+	margin-top:30px;
+	max-height:250px!important;
+	border: 10px solid  #FBF652;
+	padding:15px 25px;
+	text-align:left;
+	box-shadow: 5px 5px 6px 1px #444;
+}
+
+.about .fullcaption{
+	background-color: rgba(90,90,90,0.9);
+}
