@@ -97,6 +97,36 @@ div.menubar{
 	color: black;/*#966600;*/
 }
 
+/* info */
+.info{
+	background-color:#7A5E66;
+	margin:30px 0 0 -20px;
+	box-shadow: 5px 5px 6px 1px #444;
+}
+
+.info *{
+	color: white;
+}
+
+.info h4, .info  h5, .info h6{
+	text-align:center;
+	margin: 20px 0 ;
+}
+
+.info p{
+	margin:0px 30px 20px;
+	font-family: "Quicksand";
+	font-size: 10pt;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+
+.info a{
+	text-decoration:none;
+	font-weight:bold;
+	margin:0;
+}
+
 /* Contact */
 .contactform {
 	background-color:#E78F51;
@@ -162,6 +192,10 @@ div.menubar{
 .gallery div{
 	margin:0;
 	max-height:300px;
+}
+
+h6.fullcaption {
+	font-size: 26px;
 }
 
 .fullcaption , .gallery h5{
@@ -360,5 +394,35 @@ div.menubar{
 	background:#53D7E9;
 }
 
+.title{
+	text-align:center;
+}
+
+.title h1, .title h2, .title h3{
+	background-color:#444;
+	color:white;
+	margin:0;
+	padding:10px;
+	font-weight:300;
+	text-transform: lowercase;
+}
+
+.wufoo{
+	margin:0;
+	padding: 30px 5px 10px 20px;
+}
+
+.white{
+	background-color:white;
+}
+
+.scrolling{
+	max-height:300px !important;
+	overflow :scroll;
+}
+
+.padded{
+	padding:20px;
+}
 /*Xcontent*/
 
