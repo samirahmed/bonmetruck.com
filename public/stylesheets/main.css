@@ -231,6 +231,10 @@ h6.fullcaption {
 	font-weight:400;
 }
 
+.gallery-caption .bold {
+	font-weight:bold;
+}
+
 .fullcaption {
 	width:100%;
 	padding: 25px 0 ;
