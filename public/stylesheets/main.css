@@ -479,6 +479,12 @@ padding: 10px 40px;
 .menu .display {
 }
 
+.menu .scrolling{
+	overflow:scroll;
+	max-height: 355px;
+	
+}
+
 .menu .contain {
 	overflow:hidden;
 	max-height: 355px;
@@ -519,7 +525,7 @@ padding: 10px 40px;
 
 .menu #rice{
 	float:left;
-	margin-left:50px;
+	margin-left:20px;
 }
 
 .menu #noodle{
@@ -587,6 +593,11 @@ padding: 10px 40px;
 	line-height:35px;
 	text-transform:uppercase;
 	margin:10px 0:
+}
+
+.fillings img{
+	float:center;
+	margin:0 auto;
 }
 
 .side{}
