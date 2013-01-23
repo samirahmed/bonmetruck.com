@@ -1,3 +1,31 @@
+/* Quicksands */
+@font-face{
+	font-family: 'Quicksand';
+	src: url('/assets/fonts/Quicksand_Bold-webfont.eot');
+	src: url('/assets/fonts/Quicksand_Bold-webfont.woff') format('woff'),
+		 url('/assets/fonts/Quicksand_Bold-webfont.ttf') format('truetype'),
+		 url('/assets/fonts/Quicksand_Bold-webfont.svg') format('svg');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'Quicksand';
+	src: url('/assets/fonts/Quicksand_Light-webfont.eot');
+	src: url('/assets/fonts/Quicksand_Light-webfont.woff') format('woff'),
+		 url('/assets/fonts/Quicksand_Light-webfont.ttf') format('truetype'),
+		 url('/assets/fonts/Quicksand_Light-webfont.svg') format('svg');
+	font-weight: light;
+}
+
+@font-face{
+	font-family: 'Quicksand';
+	src: url('/assets/fonts/Quicksand_Book-webfont.eot');
+	src: url('/assets/fonts/Quicksand_Book-webfont.woff') format('woff'),
+		 url('/assets/fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+		 url('/assets/fonts/Quicksand_Book-webfont.svg') format('svg');
+	font-weight: normal;
+}
+
 /* Fonts */
 @font-face{
 	font-family: 'Rockwell';
@@ -5,7 +33,7 @@
 	src: url('/assets/fonts/Rockwell.woff') format('woff'),
 		 url('/assets/fonts/Rockwell.ttf') format('truetype'),
 		 url('/assets/fonts/Rockwell.svg') format('svg');
-	font-weight: normal;
+	font-weight: ;
 }
 
 @font-face{
