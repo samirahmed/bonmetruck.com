@@ -209,7 +209,8 @@ div.menubar{
 }
 
 h6.fullcaption {
-	font-size: 26px;
+	font-size: 23px;
+padding: 15px 0;
 }
 
 .fullcaption , .captioned h5{
@@ -222,6 +223,7 @@ h6.fullcaption {
 	font-family:"OstrichSansMedium";
 	padding: 5px 5px 5px 50px;
 	font-size: 20px;
+	text-transform:uppercase;
 }
 
 .shift-left{
@@ -247,8 +249,8 @@ h6.fullcaption {
 	width:100%;
 	padding: 25px 0 ;
 	font-family:"Quicksand", sans-serif;
-	top:-70px;
 	text-align:center;
+	top:-70px;
 	font-size:40px;
 }
 
@@ -470,7 +472,7 @@ padding: 10px 40px;
 
 .about .fullcaption{
 	background-color: rgba(50,50,50,0.9);
-	font-size:50px;
+	font-size:35px;
 	width:130%;
 	position:relative;
 	left:112px;
@@ -484,6 +486,12 @@ padding: 10px 40px;
 	overflow:scroll;
 	max-height: 355px;
 	
+}
+
+.menu .middle-caption{
+	top:-200px;
+	text-transform:uppercase;
+	padding:10px 0;
 }
 
 .menu .contain {
@@ -578,7 +586,7 @@ padding: 10px 40px;
 	color:white;
 	text-align:right;
 	text-transform:uppercase;
-	font-weight:lighter;
+	font-weight:normal;
 	padding: 15px 10px;
 	line-height:25px;
 	font-size:20pt;
