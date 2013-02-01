@@ -478,9 +478,10 @@ padding: 10px 40px;
 .about .fullcaption{
 	background-color: rgba(50,50,50,0.9);
 	font-size:35px;
-	width:130%;
+	width:100%;
 	position:relative;
-	left:112px;
+	//left:112px;
+	margin-top:50px;
 }
 
 /* Menu */
