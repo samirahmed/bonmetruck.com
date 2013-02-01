@@ -488,6 +488,13 @@ padding: 10px 40px;
 .menu .display {
 }
 
+.menu .display img {
+	max-width: 80%;
+	margin: 0 auto;
+	float:center;
+	display:block;
+}
+
 .menu .scrolling{
 	overflow:scroll;
 	max-height: 355px;
