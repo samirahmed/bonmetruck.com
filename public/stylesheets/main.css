@@ -463,6 +463,8 @@ padding: 10px 40px;
 
 .about p {
 	font-size:13pt;
+	font-weight: 300;
+	line-height: 20pt;
 	font-family:'Raleway',sans-serif;
 }
 
