@@ -463,6 +463,7 @@ padding: 10px 40px;
 
 .about p {
 	font-size:13pt;
+	font-family:'Raleway',sans-serif;
 }
 
 .about .white{
@@ -535,6 +536,7 @@ padding: 10px 40px;
 	padding:10px;
 	font-weight:normal;
 	top:100px;
+	font-family: 'Raleway',sans-serif;
 }
 
 .menu .carousel p.fatter {
