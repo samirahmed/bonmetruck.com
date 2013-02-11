@@ -19,7 +19,7 @@ Copy::Server.config do
   		set :copy_username, ENV['COPY_USERNAME']
   	 	set :copy_password, ENV['COPY_PASSWORD']
 		set :ga_code, ENV['GA_CODE']
-  		set :cache_time, 1800
+  		set :cache_time, 5
   	else
 		set :copy_username, 'admin'
 		set :copy_password, 'admin'
