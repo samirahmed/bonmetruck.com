@@ -261,7 +261,6 @@ padding: 15px 0;
 
 /*Location*/
 .location-meals{
-	background-color:#E47127;
 	border: 3px solid white;
 	margin-left:0;
 	margin-top: 40px;
@@ -297,6 +296,14 @@ padding: 15px 0;
 
 .yellow {
 	background-color:#F3F93A;
+}
+
+.orange {
+    background-color:#E47127; 
+}
+
+.purple {
+    background-color:#EC8DEC;
 }
 
 .grey {
